@@ -1,0 +1,5 @@
+supplier,cost_per_unit,lead_time,reliability
+Supplier A,10,5,0.95
+Supplier B,12,2,0.90
+Supplier C,8,7,0.80
+Supplier D,15,1,0.99
