@@ -21,7 +21,7 @@ Este repositório não é uma coleção de modelos — é uma coleção de **pro
 
 | Produto | Categoria | Descrição |
 |---------|----------|-----------|
-| 🤖 Agent Assist Copilot | RAG / Support AI | Automação de suporte com base de conhecimento |(https://github.com/sbrunofranca/portfolio-ai-products/blob/main/agent-assist-copilot/README.md)
+| 🤖 Agent Assist Copilot(https://github.com/sbrunofranca/portfolio-ai-products/blob/main/agent-assist-copilot/README.md) | RAG / Support AI | Automação de suporte com base de conhecimento |
 | 📊 Analytics AI Copilot | Text-to-SQL | Conversão de linguagem natural em SQL |
 | 🏭 Autonomous Supply Chain | Multi-Agent AI | Sistema autônomo de decisão em supply chain |
 | 📈 Supply Chain Copilot | Forecast AI | Previsão de demanda com IA híbrida |
