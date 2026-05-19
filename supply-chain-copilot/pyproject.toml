@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supply-chain-copilot"
+version = "0.1.0"
+description = "Intelligent copilot for supply chain operations and logistics"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Bruno França", email = "sbruno.franca@gmail.com"}]
+keywords = ["ai", "supply-chain", "logistics", "optimization", "copilot"]
+
+dependencies = [
+    "pandas==2.2.2",
+    "numpy==1.26.4",
+    "scikit-learn==1.4.2",
+    "streamlit==1.35.0",
+    "python-dotenv==1.0.1",
+    "anthropic>=0.40.0",
+    "pydantic>=2.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.7.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "mypy>=1.4.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["supply_chain_copilot*", "src*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "--cov=src --cov-report=html --cov-report=term"
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+strict = false
+
+[tool.coverage.run]
+branch = true
+omit = ["*/tests/*", "*/site-packages/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "if __name__ == .__main__.:",
+]
