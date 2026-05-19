@@ -17,6 +17,18 @@ Este repositório não é uma coleção de modelos — é uma coleção de **pro
 
 ---
 
+## 🚀 Visão Geral dos Produtos
+
+| Produto | Categoria | Descrição |
+|---------|----------|-----------|
+| 🤖 Agent Assist Copilot | RAG / Support AI | Automação de suporte com base de conhecimento |(https://github.com/sbrunofranca/portfolio-ai-products/blob/main/agent-assist-copilot/README.md)
+| 📊 Analytics AI Copilot | Text-to-SQL | Conversão de linguagem natural em SQL |
+| 🏭 Autonomous Supply Chain | Multi-Agent AI | Sistema autônomo de decisão em supply chain |
+| 📈 Supply Chain Copilot | Forecast AI | Previsão de demanda com IA híbrida |
+
+
+---
+
 ## 🎯 Objetivo do Repositório
 
 Este projeto foi criado para demonstrar domínio prático em:
@@ -74,17 +86,6 @@ O repositório demonstra padrões modernos de engenharia de IA:
 
 ---
 
-## 🚀 Visão Geral dos Produtos
-
-| Produto | Categoria | Descrição |
-|---------|----------|-----------|
-| 🤖 Agent Assist Copilot | RAG / Support AI | Automação de suporte com base de conhecimento |
-| 📊 Analytics AI Copilot | Text-to-SQL | Conversão de linguagem natural em SQL |
-| 🏭 Autonomous Supply Chain | Multi-Agent AI | Sistema autônomo de decisão em supply chain |
-| 📈 Supply Chain Copilot | Forecast AI | Previsão de demanda com IA híbrida |
-
-
----
 
 ## 💡 Princípios de Engenharia
 
@@ -141,10 +142,6 @@ Todos os sistemas seguem princípios de produção:
 | Analytics | ↓ 80% tempo de análise |
 | Supply Chain | ↓ 35–45% inventário |
 | Forecasting | ↑ 20–30% precisão |
-
----
-
-## 🧩 Estrutura do Repositório
 
 
 
