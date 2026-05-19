@@ -1,0 +1,160 @@
+# ============================================================
+# AMBIENTES VIRTUAIS PYTHON
+# ============================================================
+venv/
+env/
+ENV/
+.venv
+.env.venv
+venv_backup/
+
+# ============================================================
+# PYTHON COMPILADO
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================
+# TESTES E COBERTURA
+# ============================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.testmondata.sqlite
+
+# ============================================================
+# IDEs E EDITORES
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# VARIÁVEIS DE AMBIENTE
+# ============================================================
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+
+# ============================================================
+# LOGS
+# ============================================================
+*.log
+logs/
+*.log.*
+
+# ============================================================
+# DEPENDÊNCIAS E PACKAGES
+# ============================================================
+pip-log.txt
+pip-delete-this-directory.txt
+Poetry.lock
+poetry.lock
+
+# ============================================================
+# NODE (se aplicável em alguns projetos)
+# ============================================================
+node_modules/
+package-lock.json
+yarn.lock
+.npm
+
+# ============================================================
+# ARQUIVOS TEMPORÁRIOS
+# ============================================================
+*.tmp
+*.temp
+tmp/
+temp/
+*.bak
+*.swp
+.cache/
+
+# ============================================================
+# BANCO DE DADOS
+# ============================================================
+*.db
+*.sqlite
+*.sqlite3
+.database/
+
+# ============================================================
+# COMPILADOS C++
+# ============================================================
+*.o
+*.so
+*.a
+*.out
+*.dylib
+
+# ============================================================
+# JUPYTER NOTEBOOKS
+# ============================================================
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# ============================================================
+# VS Code Debugging
+# ============================================================
+.vscode/launch.json
+.vscode/settings.json
+
+# ============================================================
+# Arquivos de sistema
+# ============================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# ============================================================
+# Arquivos sensíveis (descomentar conforme necessário)
+# ============================================================
+# .env
+# secrets.json
+# credentials.json
+# aws_credentials
+# private_key*
