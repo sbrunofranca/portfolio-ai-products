@@ -179,7 +179,7 @@ jobs:
     strategy:
       matrix:
         python-version: ['3.11', '3.12']
-    
+
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v4
@@ -354,5 +354,5 @@ Próximo passo recomendado:
 
 ---
 
-*Último atualizado: 18 de Maio de 2026*  
+*Último atualizado: 18 de Maio de 2026*
 *Estimativa total: 4-6 semanas para implementação completa*

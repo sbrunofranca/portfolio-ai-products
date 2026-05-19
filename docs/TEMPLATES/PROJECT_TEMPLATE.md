@@ -171,11 +171,11 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     """Configurações da aplicação."""
-    
+
     app_name: str = "Novo Projeto"
     debug: bool = False
     log_level: str = "INFO"
-    
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
@@ -379,21 +379,21 @@ def process_user(user_id, name):
 def complex_function(param1: str, param2: int) -> bool:
     """
     Descrição breve da função.
-    
+
     Descrição mais detalhada, explicando comportamento complexo
     ou casos especiais se necessário.
-    
+
     Args:
         param1: Descrição do primeiro parâmetro.
         param2: Descrição do segundo parâmetro.
-    
+
     Returns:
         Descrição do que a função retorna.
-    
+
     Raises:
         ValueError: Quando alguma condição não é atendida.
         TypeError: Quando tipos incorretos são passados.
-    
+
     Example:
         >>> result = complex_function("test", 42)
         >>> print(result)
@@ -412,18 +412,18 @@ from typing import Optional
 @dataclass
 class User:
     """Modelo de usuário."""
-    
+
     id: int
     name: str
     email: str
     is_active: bool = True
     created_at: Optional[str] = None
-    
+
     def __post_init__(self):
         """Validação após inicialização."""
         if "@" not in self.email:
             raise ValueError(f"Email inválido: {self.email}")
-    
+
     def get_display_name(self) -> str:
         """Retorna nome para exibição."""
         return self.name if self.is_active else f"{self.name} (Inativo)"

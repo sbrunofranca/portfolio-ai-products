@@ -158,20 +158,20 @@ Seguimos **PEP 8** com exceções do `black`:
 def calculate_discount(price: float, percentage: float) -> float:
     """
     Calcula desconto baseado em percentual.
-    
+
     Args:
         price: Preço original em reais
         percentage: Percentual de desconto (0-100)
-    
+
     Returns:
         Preço com desconto aplicado
-    
+
     Raises:
         ValueError: Se percentage não está entre 0-100
     """
     if not 0 <= percentage <= 100:
         raise ValueError(f"Percentual inválido: {percentage}")
-    
+
     return price * (1 - percentage / 100)
 
 
@@ -192,12 +192,12 @@ def calc(p, pct):
    ```python
    def public_function(param: str) -> bool:
        """Descrição breve.
-       
+
        Descrição mais detalhada se necessário.
-       
+
        Args:
            param: Descrição do parâmetro
-       
+
        Returns:
            Descrição do retorno
        """
@@ -210,11 +210,11 @@ def calc(p, pct):
    # Stdlib
    import os
    from pathlib import Path
-   
+
    # Third-party
    import fastapi
    from anthropic import Anthropic
-   
+
    # Local
    from .models import User
    from .utils import helper
@@ -225,7 +225,7 @@ def calc(p, pct):
    # ✅ BOM
    with open(file) as f:
        data = f.read()
-   
+
    # ❌ RUIM
    f = open(file)
    data = f.read()
@@ -274,18 +274,18 @@ from src.projeto.models import User
 
 class TestUser:
     """Testes para modelo User."""
-    
+
     def test_user_creation(self):
         """Deve criar usuário com sucesso."""
         user = User(name="João", email="joao@example.com")
         assert user.name == "João"
         assert user.email == "joao@example.com"
-    
+
     def test_user_invalid_email(self):
         """Deve rejeitar email inválido."""
         with pytest.raises(ValueError):
             User(name="João", email="invalid-email")
-    
+
     @pytest.mark.asyncio
     async def test_user_save_async(self):
         """Deve salvar usuário assincronamente."""
