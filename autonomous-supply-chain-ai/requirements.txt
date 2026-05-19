@@ -6,3 +6,9 @@ python-dotenv
 simpy
 ortools
 matplotlib
+langchain
+langchain-community
+langchain-chroma
+langchain-huggingface
+sentence-transformers
+chromadb
