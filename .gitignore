@@ -4,9 +4,12 @@
 venv/
 env/
 ENV/
-.venv
+.venv/
 .env.venv
 venv_backup/
+*/venv/
+*/.venv/
+*/.env.venv
 
 # ============================================================
 # PYTHON COMPILADO
@@ -67,13 +70,20 @@ coverage.xml
 Thumbs.db
 
 # ============================================================
-# VARIÁVEIS DE AMBIENTE
+# VARIÁVEIS DE AMBIENTE - NUNCA COMMITAR
 # ============================================================
 .env
 .env.local
 .env.*.local
 .env.production.local
 .env.development.local
+.env.test.local
+.env.staging
+.env.prod
+.env.backup
+*/.*env*
+!.env.example
+!*/.env.example
 
 # ============================================================
 # LOGS
@@ -151,10 +161,22 @@ ehthumbs.db
 desktop.ini
 
 # ============================================================
-# Arquivos sensíveis (descomentar conforme necessário)
+# ARQUIVOS SENSÍVEIS - NUNCA COMMITAR
 # ============================================================
-# .env
-# secrets.json
-# credentials.json
-# aws_credentials
-# private_key*
+secrets.json
+credentials.json
+*_credentials*
+*_secret*
+private_key*
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+.ssh/
+.gnupg/
+aws_credentials
+gcloud_credentials
+*.token
+*.jwt
+.claude/worktrees/
