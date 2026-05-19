@@ -30,7 +30,7 @@ from app.chat_agent import ask_agents
 
 st.set_page_config(
 
-    page_title="Autonomous Inventory Agent",
+    page_title="Agente Autônomo de Inventário",
 
     page_icon="📦",
 
@@ -75,25 +75,25 @@ with st.sidebar:
     st.markdown("---")
 
     st.markdown("""
-    
-    ### System Modules
-    
-    - Demand Forecasting
-    - Inventory Simulation
-    - Risk Analysis
-    - Autonomous Procurement
-    - Logistics Intelligence
-    - Enterprise RAG
-    - AI Agents
-    
+
+    ### Módulos do Sistema
+
+    - Previsão de Demanda
+    - Simulação de Inventário
+    - Análise de Risco
+    - Procurement Autônomo
+    - Inteligência Logística
+    - RAG Empresarial
+    - Agentes IA
+
     """)
 
     st.markdown("---")
 
     st.info("""
 
-    AI-powered autonomous
-    inventory management system.
+    Sistema autônomo de gerenciamento
+    de inventário impulsionado por IA.
 
     """)
 
@@ -101,10 +101,10 @@ with st.sidebar:
 # TITLE
 # =========================================================
 
-st.title("📦 Autonomous Inventory Agent")
+st.title("📦 Agente Autônomo de Inventário")
 
 st.caption(
-    "AI-powered supply chain decision platform"
+    "Plataforma de decisão em supply chain impulsionada por IA"
 )
 
 # =========================================================
@@ -129,7 +129,7 @@ decision = agents["replenishment_decision"]
 # TOP KPIs
 # =========================================================
 
-st.markdown("## 📊 Operational KPIs")
+st.markdown("## 📊 KPIs Operacionais")
 
 col1, col2, col3, col4 = st.columns(4)
 
@@ -137,7 +137,7 @@ with col1:
 
     st.metric(
 
-        "Final Stock",
+        "Estoque Final",
 
         simulation["final_stock"]
     )
@@ -146,7 +146,7 @@ with col2:
 
     st.metric(
 
-        "Stockouts",
+        "Falta de Estoque",
 
         simulation["stockouts"]
     )
@@ -155,7 +155,7 @@ with col3:
 
     st.metric(
 
-        "Orders Created",
+        "Pedidos Criados",
 
         len(simulation["orders"])
     )
@@ -164,7 +164,7 @@ with col4:
 
     st.metric(
 
-        "Risk Level",
+        "Nível de Risco",
 
         risk["risk_level"]
     )
@@ -181,12 +181,12 @@ col1, col2 = st.columns(2)
 
 with col1:
 
-    st.markdown("## 📈 Demand Forecast")
+    st.markdown("## 📈 Previsão de Demanda")
 
     st.info(
 
-        f"Predicted Demand: "
-        f"{agents['forecast']['predicted_demand']} units"
+        f"Demanda Prevista: "
+        f"{agents['forecast']['predicted_demand']} unidades"
     )
 
 # =========================================================
@@ -195,7 +195,7 @@ with col1:
 
 with col2:
 
-    st.markdown("## 🏭 Supply Chain Simulation")
+    st.markdown("## 🏭 Simulação de Supply Chain")
 
     history_df = pd.DataFrame(
 
@@ -219,11 +219,11 @@ col1, col2 = st.columns(2)
 
 with col1:
 
-    st.markdown("## ⚠️ Operational Risk")
+    st.markdown("## ⚠️ Risco Operacional")
 
     st.error(
 
-        f"Risk Level: "
+        f"Nível de Risco: "
         f"{risk['risk_level']}"
     )
 
@@ -235,11 +235,11 @@ with col1:
 
 with col2:
 
-    st.markdown("## 🤖 Autonomous Procurement")
+    st.markdown("## 🤖 Procurement Autônomo")
 
     st.success(
 
-        f"Decision: "
+        f"Decisão: "
         f"{decision['decision']}"
     )
 
@@ -249,33 +249,33 @@ with col2:
 # MULTI AGENT WORKFLOW
 # =========================================================
 
-st.markdown("## 🔄 Multi-Agent Workflow")
+st.markdown("## 🔄 Fluxo de Trabalho Multi-Agente")
 
 workflow_col1, workflow_col2, workflow_col3 = st.columns(3)
 
 with workflow_col1:
 
-    st.info("📊 Demand Agent")
+    st.info("📊 Agente de Demanda")
 
-    st.info("📦 Inventory Agent")
+    st.info("📦 Agente de Inventário")
 
 with workflow_col2:
 
-    st.info("💰 Cost Agent")
+    st.info("💰 Agente de Custo")
 
-    st.info("🚚 Logistics Agent")
+    st.info("🚚 Agente de Logística")
 
 with workflow_col3:
 
-    st.info("⚠️ Risk Agent")
+    st.info("⚠️ Agente de Risco")
 
-    st.info("🤖 Procurement Agent")
+    st.info("🤖 Agente de Procurement")
 
 # =========================================================
 # AI EXPLANATION
 # =========================================================
 
-st.markdown("## 🧠 AI Business Explanation")
+st.markdown("## 🧠 Explicação de Negócio com IA")
 
 st.write(result["explanation"])
 
@@ -283,11 +283,11 @@ st.write(result["explanation"])
 # CHAT SECTION
 # =========================================================
 
-st.markdown("## 💬 Chat With AI Agents")
+st.markdown("## 💬 Chat com Agentes IA")
 
 question = st.text_input(
 
-    "Ask about inventory, risk, logistics or procurement:"
+    "Pergunte sobre inventário, risco, logística ou procurement:"
 )
 
 if question:
@@ -305,26 +305,26 @@ if question:
 # EXPANDERS
 # =========================================================
 
-with st.expander("📚 Enterprise Knowledge Base"):
+with st.expander("📚 Base de Conhecimento Empresarial"):
 
     st.markdown("""
 
-    ### Knowledge Sources
+    ### Fontes de Conhecimento
 
-    - Supply chain policies
-    - Inventory procedures
-    - Logistics rules
-    - Procurement guidelines
-    - Operational workflows
+    - Políticas de supply chain
+    - Procedimentos de inventário
+    - Regras de logística
+    - Diretrizes de procurement
+    - Workflows operacionais
 
     """)
 
-with st.expander("🧠 Historical Decisions"):
+with st.expander("🧠 Decisões Históricas"):
 
     st.write(
         result["previous_decision"]
     )
 
-with st.expander("🔍 Full Agent State"):
+with st.expander("🔍 Estado Completo do Agente"):
 
     st.json(agents)

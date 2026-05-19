@@ -6,9 +6,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from app.pipeline import run_pipeline
 
-st.set_page_config(page_title="AI Demand Planner")
+st.set_page_config(page_title="Planejador de Demanda com IA")
 
-st.title("📊 AI Demand Planner MVP")
+st.title("📊 MVP Planejador de Demanda com IA")
 
 if st.button("Rodar previsão"):
     
